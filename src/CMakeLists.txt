@@ -1,0 +1,5 @@
+add_library (reader reader.c reader.h)
+add_library (analyzer analyzer.c analyzer.h)
+add_library (printer printer.c printer.h)
+add_executable (app main.c)
+target_link_libraries (app reader analyzer printer)
